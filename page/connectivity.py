@@ -9,6 +9,7 @@ from page.base import BasePage
 
 class ConnectivityPage(BasePage):
     def connect_wifi(self):
+
         self.d(resourceId="com.ff.vehicle:id/wifi_name_tv", text="FF-Web").click()
         self.d(resourceId="com.ff.vehicle:id/text_et").click()
         self.d(description="f").click()

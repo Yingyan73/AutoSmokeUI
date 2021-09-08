@@ -13,8 +13,10 @@ logging.basicConfig(level=logging.INFO)
 
 class HomePage(BasePage):
     def enter_vehicle_page(self):
+        self.d.sleep(5)
         self.d.xpath('//*[@resource-id="com.android.systemui:id/ff_car_navigation_bar_button_vehicle"]/android'
                           '.widget.LinearLayout[1]/android.widget.ImageButton[1]').click()
+        self.d.sleep(5)
         from page.vehicle import VehiclePage
         return VehiclePage()
 

@@ -25,3 +25,6 @@ class TestMPC:
         self.home.enter_vehicle_page() \
             .enter_settings_page().enter_connectivity_page().connect_wifi()
         print(self.home.d(resourceId="com.ff.vehicle:id/wifi_state_tv").get_text())
+
+    def test_setup(self):
+        self.home.d.app_start("com.android.systemui","com.android.car.overview.StreamOverviewActivity")

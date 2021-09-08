@@ -21,19 +21,19 @@ class App:
     def start(self):
         if self.d is None:
             self.d = u2.connect("857353b4")
-            logging.info("self.d.info")
+            logging.info(self.d.info)
             self.d.implicitly_wait(5)
         else:
             # reuse driver
             logging.info("reuse driver")
-            self.d.app_start("com.android.systemui")
+            self.d.app_start("com.android.systemui","com.android.car.overview.StreamOverviewActivity")
         return self
 
     def restart(self):
         # close_app() 关闭应用
         logging.info("restart app")
         self.d.app_clear("com.android.systemui")
-        self.d.app_start("com.android.systemui")
+        self.d.app_start("com.android.systemui","com.android.car.overview.StreamOverviewActivity")
 
     def stop(self):
         # quit() 销毁这个driver
