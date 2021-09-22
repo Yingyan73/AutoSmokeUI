@@ -4,11 +4,11 @@
 # @Author: Xuewen Lei
 # @Date  : 2021/9/15
 # @Desc  :
-import os
 
+import pytest
 import uiautomator2 as u2
 
-from HPC.bsp_steps.bsp_testcases import BSPTestCases, ethernet_connectivity
+from HPC.ui_pages.UIPreconditions import BSPTestCases, ethernet_connectivity
 from devices_info import DevicesInfo
 
 '''
@@ -33,21 +33,13 @@ class TestHPCSmoke:
         self.hpc.implicitly_wait(5)
         self.bsp = BSPTestCases()
 
-    # TODO 这三条可以用参数化改成一条case
-    def test_ethernet_connectivity_mmu(self):
-        # ping MMU
-        res = ethernet_connectivity(DevicesInfo.MMU_IP, self.hpc)
-        assert '64 bytes from 127.26.0.1' in res
-
-    def test_ethernet_connectivity_iab(self):
-        # ping IAB
-        res = ethernet_connectivity(DevicesInfo.IAB_IP, self.hpc)
-        assert '64 bytes from 127.26.0.4' in res
-
-    def test_ethernet_connectivity_mpc(self):
-        # ping MPC
-        res = ethernet_connectivity(DevicesInfo.MPC_IP, self.hpc)
-        assert '64 bytes from 127.26.0.2' in res
+    @pytest.mark.parametrize('ip,result', [[DevicesInfo.MMU_IP, '64 bytes from 127.26.0.1'],
+                                           [DevicesInfo.IAB_IP, '64 bytes from 127.26.0.4'],
+                                           [DevicesInfo.MPC_IP, '64 bytes from 127.26.0.2']], ids=['MMU', 'IAB', 'MPC'])
+    def test_ethernet_connectivity(self, ip, result):
+        # ping MMU,IAB,MPC
+        res = ethernet_connectivity(ip, self.hpc)
+        assert result in res
 
     def test_playBack_youTubeTV_on_home(self):
         pass
