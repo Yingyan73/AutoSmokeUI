@@ -1,0 +1,8 @@
+[2021-09-23  11:24:12.890] mylog.py -> <module> line:56 [INFO] : info
+[2021-09-23  11:24:12.890] mylog.py -> <module> line:57 [WARNING] : warning
+[2021-09-23  11:24:12.890] mylog.py -> <module> line:58 [ERROR] : error
+[2021-09-23  11:24:12.890] mylog.py -> <module> line:59 [CRITICAL] : critical
+[2021-09-23  11:26:40.991] mylog.py -> <module> line:56 [INFO] : info
+[2021-09-23  11:26:40.991] mylog.py -> <module> line:57 [WARNING] : warning
+[2021-09-23  11:26:40.991] mylog.py -> <module> line:58 [ERROR] : error
+[2021-09-23  11:26:40.992] mylog.py -> <module> line:59 [CRITICAL] : critical

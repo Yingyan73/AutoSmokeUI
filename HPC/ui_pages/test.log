@@ -1,0 +1,44 @@
+[2021-09-23  11:27:03.580] UIPreconditions.py -> connect_vpn line:26 [INFO] : Step1: confirm mpc and hpc network connection is normal
+[2021-09-23  11:28:03.603] UIPreconditions.py -> connect_vpn line:30 [INFO] : connect normal with mpc
+[2021-09-23  11:28:03.604] UIPreconditions.py -> connect_vpn line:33 [INFO] : Step2: install VPN APK
+[2021-09-23  11:28:07.424] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Performing Streamed Install
+
+[2021-09-23  11:28:07.424] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Success
+
+[2021-09-23  11:28:07.425] UIPreconditions.py -> connect_vpn line:42 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-23  11:28:41.585] UIPreconditions.py -> connect_vpn line:26 [INFO] : Step1: confirm mpc and hpc network connection is normal
+[2021-09-23  11:29:41.607] UIPreconditions.py -> connect_vpn line:30 [INFO] : connect normal with mpc
+[2021-09-23  11:29:41.608] UIPreconditions.py -> connect_vpn line:33 [INFO] : Step2: install VPN APK
+[2021-09-23  11:29:45.653] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Performing Streamed Install
+
+[2021-09-23  11:29:45.654] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Success
+
+[2021-09-23  11:29:45.654] UIPreconditions.py -> connect_vpn line:42 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-23  13:41:04.205] UIPreconditions.py -> connect_vpn line:26 [INFO] : Step1: confirm mpc and hpc network connection is normal
+[2021-09-23  13:42:04.308] UIPreconditions.py -> connect_vpn line:30 [INFO] : connect normal with mpc
+[2021-09-23  13:42:04.309] UIPreconditions.py -> connect_vpn line:33 [INFO] : Step2: install VPN APK
+[2021-09-23  13:42:08.560] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Performing Streamed Install
+
+[2021-09-23  13:42:08.561] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Success
+
+[2021-09-23  13:42:08.561] UIPreconditions.py -> connect_vpn line:42 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-23  14:04:28.858] UIPreconditions.py -> connect_vpn line:26 [INFO] : Step1: confirm mpc and hpc network connection is normal
+[2021-09-23  14:05:28.993] UIPreconditions.py -> connect_vpn line:30 [INFO] : connect normal with mpc
+[2021-09-23  14:05:28.994] UIPreconditions.py -> connect_vpn line:33 [INFO] : Step2: install VPN APK
+[2021-09-23  14:05:33.607] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Performing Streamed Install
+
+[2021-09-23  14:05:33.607] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Success
+
+[2021-09-23  14:05:33.608] UIPreconditions.py -> connect_vpn line:42 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-23  14:06:38.663] UIPreconditions.py -> connect_vpn line:26 [INFO] : Step1: confirm mpc and hpc network connection is normal
+[2021-09-23  14:07:38.682] UIPreconditions.py -> connect_vpn line:30 [INFO] : connect normal with mpc
+[2021-09-23  14:07:38.683] UIPreconditions.py -> connect_vpn line:33 [INFO] : Step2: install VPN APK
+[2021-09-23  14:07:42.937] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Performing Streamed Install
+
+[2021-09-23  14:07:42.938] UIPreconditions.py -> connect_vpn line:37 [INFO] : Console: Success
+
+[2021-09-23  14:07:42.938] UIPreconditions.py -> connect_vpn line:42 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-23  14:08:01.099] UIPreconditions.py -> connect_vpn line:64 [INFO] : select a vpn to connect
+[2021-09-23  14:08:03.809] UIPreconditions.py -> connect_vpn line:71 [INFO] : set vpn ip
+[2021-09-23  14:08:14.946] UIPreconditions.py -> connect_vpn line:81 [INFO] : turn on VPN
+[2021-09-23  14:08:25.998] UIPreconditions.py -> connect_vpn line:91 [INFO] : select group to login

@@ -8,7 +8,7 @@
 import pytest
 import uiautomator2 as u2
 
-from HPC.ui_pages.UIPreconditions import BSPTestCases, ethernet_connectivity
+from HPC.BSP.bsp_steps import ethernet_connectivity
 from devices_info import DevicesInfo
 
 '''
@@ -16,7 +16,7 @@ from devices_info import DevicesInfo
   download daily version and fastboot flash software
 
 Testcases:
-    bsp_steps testcases
+    BSP testcases
         1. HPC reboot: HPC, MPC, Adaptor and MMU working together, and then reboot HPC, after reboot, check if Ethernet/Touch/display/WiFi/BT work
         2. Interior Camera: Check Interior Camera
         3. MCU: Check MCU control Fan driver power and PWM for fan speed.
@@ -31,7 +31,6 @@ class TestHPCSmoke:
         self.hpc = u2.connect(DevicesInfo.HPC_SERIALNO)
         print(self.hpc)
         self.hpc.implicitly_wait(5)
-        self.bsp = BSPTestCases()
 
     @pytest.mark.parametrize('ip,result', [[DevicesInfo.MMU_IP, '64 bytes from 127.26.0.1'],
                                            [DevicesInfo.IAB_IP, '64 bytes from 127.26.0.4'],
@@ -42,4 +41,13 @@ class TestHPCSmoke:
         assert result in res
 
     def test_playBack_youTubeTV_on_home(self):
+        pass
+
+    def test_playBack_youTubeTV_on_home_on_livetv(self):
+        pass
+
+    def test_playBack_amazon_video_on_foryou(self):
+        pass
+
+    def test_play_youTube_video_on_videos(self):
         pass
