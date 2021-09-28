@@ -9,6 +9,7 @@ import pytest
 import uiautomator2 as u2
 
 from HPC.BSP.bsp_steps import ethernet_connectivity
+from HPC.ui_pages.youTube_sign_in_page import YouTubeSignInPage
 from devices_info import DevicesInfo
 
 '''
@@ -27,6 +28,8 @@ Testcases:
 
 
 class TestHPCSmoke:
+
+
     def setup_class(self):
         self.hpc = u2.connect(DevicesInfo.HPC_SERIALNO)
         print(self.hpc)
@@ -41,6 +44,8 @@ class TestHPCSmoke:
         assert result in res
 
     def test_playBack_youTubeTV_on_home(self):
+        signin = YouTubeSignInPage()
+        if
         pass
 
     def test_playBack_youTubeTV_on_home_on_livetv(self):

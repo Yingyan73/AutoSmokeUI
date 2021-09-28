@@ -9,12 +9,14 @@ import os
 
 import uiautomator2 as u2
 
+import status
 from HPC.BSP.bsp_steps import checking_internet_access
 from Logger.mylog import logger
 from devices_info import DevicesInfo
 
 
 class UIPreconditions:
+    if_vpn_connected = False
     def connect_vpn(self, d: u2.Device):
         '''
         Precondition step on CHINA, If we want to test PAX on PID/RSD or Spotify,Alexa and other media apps on CID.
@@ -35,12 +37,15 @@ class UIPreconditions:
         # Step3: connect vpn account
         # back to HOME page
         logger.info("back to HOME page to launch AnyConnect app")
-        d.implicitly_wait(5)
         # d(resourceId="com.android.systemui:id/home").click()
         # display APPS page
-        if not d(text="APPS").exists(timeout=3):
-            d.press("home")
-            d(text="APPS").click_exists(5)
+        if not d(resourceId="com.ff.iai.paxlauncher:id/appInfoTextView", text="AnyConnect").exists(timeout=3):
+            # d.press("home")
+            d(resourceId="com.android.systemui:id/home").click_exists(5)
+            if not d(text="APPS").click_exists(3):
+                # if can't get APPS element, try to use coordinates
+                d.click(1858, 117)
+                logger.info("switch to APPS by coordinates")
         # launch AnyConnect app
         if not d(resourceId="com.ff.iai.paxlauncher:id/appInfoTextView", text="AnyConnect").exists(timeout=3):
             for i in range(0, 6):
@@ -88,6 +93,7 @@ class UIPreconditions:
             if d(className="android.widget.Switch", text='On').exists(timeout=10) and \
                     d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/generic_list_item_value_text",
                       text="Connected").exists(timeout=10):
+                status.if_vpn_connected = True
                 return True
         else:
             logger.info("already set vpn")
@@ -102,6 +108,7 @@ class UIPreconditions:
             if d(className="android.widget.Switch", text='On').exists(timeout=10) and \
                     d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/generic_list_item_value_text",
                       text="Connected").exists(timeout=10):
+                status.if_vpn_connected = True
                 return True
 
     def pop_up_confrim(self, d: u2.Device):

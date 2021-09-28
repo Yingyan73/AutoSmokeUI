@@ -42,3 +42,150 @@
 [2021-09-23  14:08:03.809] UIPreconditions.py -> connect_vpn line:71 [INFO] : set vpn ip
 [2021-09-23  14:08:14.946] UIPreconditions.py -> connect_vpn line:81 [INFO] : turn on VPN
 [2021-09-23  14:08:25.998] UIPreconditions.py -> connect_vpn line:91 [INFO] : select group to login
+[2021-09-26  15:42:59.207] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  15:43:59.368] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  15:43:59.368] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  15:44:04.302] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  15:44:04.303] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  15:44:04.303] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  15:47:37.705] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  15:48:37.733] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  15:48:37.733] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  15:48:42.120] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  15:48:42.120] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  15:48:42.121] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  15:49:49.805] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  15:50:49.838] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  15:50:49.839] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  15:50:54.742] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  15:50:54.742] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  15:50:54.743] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  15:53:18.914] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  15:54:18.932] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  15:54:18.933] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  15:54:23.040] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  15:54:23.041] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  15:54:23.041] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  15:56:55.114] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  15:57:55.139] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  15:57:55.140] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  15:57:59.224] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  15:57:59.224] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  15:57:59.226] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:02:17.708] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:03:17.733] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:03:17.734] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:03:22.245] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:03:22.246] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:03:22.246] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:04:01.148] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:07:10.035] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:08:10.055] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:08:10.056] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:08:14.191] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:08:14.191] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:08:14.192] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:09:37.853] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:10:37.882] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:10:37.883] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:10:41.939] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:10:41.939] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:10:41.940] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:11:14.763] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:12:14.783] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:12:14.784] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:12:18.865] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:12:18.865] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:12:18.865] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:13:02.885] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:14:02.904] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:14:02.905] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:14:07.043] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:14:07.043] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:14:07.044] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:15:31.646] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:16:31.666] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:16:31.667] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:16:35.796] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:16:35.796] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:16:35.797] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:19:00.061] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:19:23.068] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:20:23.094] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:20:23.095] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:20:27.161] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:20:27.162] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:20:27.163] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:21:42.993] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:22:43.013] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:22:43.014] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:22:47.144] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:22:47.145] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:22:47.146] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:22:51.076] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:22:55.070] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:22:59.054] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:23:03.079] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:23:07.033] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:23:10.995] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:23:14.942] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:23:18.896] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:23:22.858] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:23:37.602] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:24:37.621] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:24:37.622] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:24:41.692] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:24:41.693] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:24:41.695] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:24:45.593] UIPreconditions.py -> connect_vpn line:44 [INFO] : switch to APPS by coordinates
+[2021-09-26  16:53:03.950] bsp_steps.py -> checking_internet_access line:22 [INFO] : Step1: confirm hpc can access baidu
+[2021-09-26  16:54:04.083] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-09-26  16:54:04.084] UIPreconditions.py -> connect_vpn line:28 [INFO] : Step2: install VPN APK
+[2021-09-26  16:54:08.447] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Performing Streamed Install
+
+[2021-09-26  16:54:08.447] UIPreconditions.py -> connect_vpn line:32 [INFO] : Console: Success
+
+[2021-09-26  16:54:08.447] UIPreconditions.py -> connect_vpn line:37 [INFO] : back to HOME page to launch AnyConnect app
+[2021-09-26  16:54:24.573] UIPreconditions.py -> connect_vpn line:62 [INFO] : select a vpn to connect
+[2021-09-26  16:54:26.919] UIPreconditions.py -> connect_vpn line:69 [INFO] : set vpn ip
+[2021-09-26  16:54:37.905] UIPreconditions.py -> connect_vpn line:79 [INFO] : turn on VPN
+[2021-09-26  16:54:47.546] UIPreconditions.py -> connect_vpn line:89 [INFO] : select group to login
+[2021-09-27  15:42:52.246] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:20 [INFO] : wipe carousel channel list
+[2021-09-27  15:53:15.639] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:20 [INFO] : wipe carousel channel list
+[2021-09-27  15:53:33.117] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:20 [INFO] : wipe carousel channel list
+[2021-09-27  15:55:36.508] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:21 [INFO] : wipe carousel channel list
+[2021-09-27  15:57:08.743] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:22 [INFO] : wipe carousel channel list
+[2021-09-27  15:57:23.932] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:22 [INFO] : wipe carousel channel list
+[2021-09-27  15:57:57.190] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:22 [INFO] : wipe carousel channel list
+[2021-09-27  15:58:10.743] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:22 [INFO] : wipe carousel channel list
+[2021-09-27  15:59:38.422] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:22 [INFO] : wipe carousel channel list
+[2021-09-27  16:00:07.129] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:22 [INFO] : wipe carousel channel list
+[2021-09-27  16:06:37.699] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:23 [INFO] : wipe carousel channel list
