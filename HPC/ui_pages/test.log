@@ -189,3 +189,151 @@
 [2021-09-27  15:59:38.422] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:22 [INFO] : wipe carousel channel list
 [2021-09-27  16:00:07.129] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:22 [INFO] : wipe carousel channel list
 [2021-09-27  16:06:37.699] home_page.py -> playback_youTubeTV_by_swipe_up_and_down line:23 [INFO] : wipe carousel channel list
+[2021-09-29  14:49:02.532] home_page.py -> swipe_up_on_main_screen line:34 [INFO] : swipe up
+[2021-09-29  14:49:11.424] home_page.py -> swipe_down_on_main_screen line:39 [INFO] : swipe down
+[2021-09-29  14:59:43.052] home_page.py -> <module> line:41 [INFO] : 0
+[2021-09-29  14:59:45.695] home_page.py -> <module> line:41 [INFO] : 1
+[2021-09-29  14:59:48.534] home_page.py -> <module> line:41 [INFO] : 2
+[2021-09-29  14:59:51.256] home_page.py -> <module> line:41 [INFO] : 3
+[2021-09-29  14:59:54.201] home_page.py -> <module> line:41 [INFO] : 4
+[2021-09-29  14:59:57.046] home_page.py -> <module> line:41 [INFO] : 5
+[2021-09-29  15:00:28.950] home_page.py -> <module> line:40 [INFO] : 0
+[2021-09-29  15:00:31.335] home_page.py -> <module> line:40 [INFO] : 1
+[2021-09-29  15:00:33.308] home_page.py -> <module> line:40 [INFO] : 2
+[2021-09-29  15:00:35.724] home_page.py -> <module> line:40 [INFO] : 3
+[2021-09-29  15:00:38.081] home_page.py -> <module> line:40 [INFO] : 4
+[2021-09-29  15:00:40.169] home_page.py -> <module> line:40 [INFO] : 5
+[2021-09-29  15:00:42.236] home_page.py -> <module> line:40 [INFO] : 6
+[2021-09-29  15:25:19.466] home_page.py -> swipe_down_on_carousel_channel_list line:41 [INFO] : swipe down on carousel channel list
+[2021-09-29  15:25:37.433] home_page.py -> swipe_down_on_carousel_channel_list line:41 [INFO] : swipe down on carousel channel list
+[2021-09-29  15:26:29.958] home_page.py -> swipe_down_on_carousel_channel_list line:41 [INFO] : swipe down on carousel channel list
+[2021-09-29  15:29:36.918] home_page.py -> swipe_down_on_carousel_channel_list line:41 [INFO] : swipe down on carousel channel list
+[2021-09-29  15:32:46.097] home_page.py -> swipe_down_on_carousel_channel_list line:41 [INFO] : swipe down on carousel channel list
+[2021-09-29  15:34:18.212] home_page.py -> swipe_down_on_carousel_channel_list line:41 [INFO] : swipe down on carousel channel list
+[2021-09-29  15:34:21.054] home_page.py -> swipe_up_on_carousel_channel_list line:36 [INFO] : swipe up on carousel channel list
+[2021-09-29  15:58:29.944] home_page.py -> sliding_display_carousel_channel_list line:24 [INFO] : Display carousel channel list
+[2021-09-29  15:58:36.165] home_page.py -> sliding_display_carousel_channel_list line:24 [INFO] : Display carousel channel list
+[2021-09-29  15:58:42.349] home_page.py -> sliding_display_carousel_channel_list line:24 [INFO] : Display carousel channel list
+[2021-09-29  15:59:38.495] home_page.py -> sliding_display_carousel_channel_list line:24 [INFO] : Display carousel channel list
+[2021-09-29  15:59:44.719] home_page.py -> sliding_display_carousel_channel_list line:24 [INFO] : Display carousel channel list
+[2021-09-29  15:59:50.964] home_page.py -> sliding_display_carousel_channel_list line:24 [INFO] : Display carousel channel list
+[2021-09-29  16:02:13.095] home_page.py -> sliding_display_carousel_channel_list line:25 [INFO] : slide carousel channel list 1 times
+[2021-09-29  16:02:19.470] home_page.py -> sliding_display_carousel_channel_list line:25 [INFO] : slide carousel channel list 2 times
+[2021-09-29  16:04:59.721] home_page.py -> sliding_display_carousel_channel_list line:25 [INFO] : slide carousel channel list 1 times
+[2021-09-29  16:05:06.125] home_page.py -> sliding_display_carousel_channel_list line:25 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:17:28.253] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:17:34.902] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:17:44.690] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:17:44.691] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :2
+[2021-09-29  17:18:21.199] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:18:27.332] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:18:34.053] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-09-29  17:18:39.985] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-09-29  17:18:45.974] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-09-29  17:18:51.966] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-09-29  17:18:56.495] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:18:56.495] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :2
+[2021-09-29  17:18:59.892] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:18:59.893] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :3
+[2021-09-29  17:19:03.246] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:03.247] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :4
+[2021-09-29  17:19:06.414] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:06.414] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :5
+[2021-09-29  17:19:09.831] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:09.831] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :6
+[2021-09-29  17:19:12.950] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:12.950] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :7
+[2021-09-29  17:19:15.931] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:15.931] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :8
+[2021-09-29  17:19:19.121] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:19.121] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :9
+[2021-09-29  17:19:22.104] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:22.104] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :10
+[2021-09-29  17:19:25.300] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:25.301] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :11
+[2021-09-29  17:19:28.445] carousel_channel_list_page.py -> swipe_up_on_carousel_channel_list line:18 [INFO] : swipe up on carousel channel list
+[2021-09-29  17:19:28.445] carousel_channel_list_page.py -> <module> line:41 [INFO] : swip times :12
+[2021-09-29  17:23:03.355] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:23:09.511] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:23:16.627] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-09-29  17:23:22.816] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-09-29  17:23:29.268] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-09-29  17:23:35.775] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-09-29  17:23:42.635] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 7 times
+[2021-09-29  17:23:49.343] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 8 times
+[2021-09-29  17:23:56.714] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 9 times
+[2021-09-29  17:24:03.013] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 10 times
+[2021-09-29  17:24:09.719] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 11 times
+[2021-09-29  17:24:16.294] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 12 times
+[2021-09-29  17:25:06.329] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:25:47.888] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:25:54.033] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:26:01.678] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-09-29  17:26:08.565] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-09-29  17:26:14.761] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-09-29  17:26:21.759] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-09-29  17:26:28.895] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 7 times
+[2021-09-29  17:26:35.831] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 8 times
+[2021-09-29  17:26:42.435] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 9 times
+[2021-09-29  17:26:48.966] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 10 times
+[2021-09-29  17:26:55.935] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 11 times
+[2021-09-29  17:27:02.699] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 12 times
+[2021-09-29  17:27:10.279] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 13 times
+[2021-09-29  17:27:17.227] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 14 times
+[2021-09-29  17:27:23.620] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 15 times
+[2021-09-29  17:27:30.820] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 16 times
+[2021-09-29  17:27:37.220] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 17 times
+[2021-09-29  17:27:44.311] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 18 times
+[2021-09-29  17:27:50.529] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 19 times
+[2021-09-29  17:27:57.953] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 20 times
+[2021-09-29  17:28:04.483] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 21 times
+[2021-09-29  17:28:10.697] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 22 times
+[2021-09-29  17:28:17.720] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 23 times
+[2021-09-29  17:28:24.301] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 24 times
+[2021-09-29  17:28:31.711] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 25 times
+[2021-09-29  17:28:38.687] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 26 times
+[2021-09-29  17:28:45.732] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 27 times
+[2021-09-29  17:28:51.982] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 28 times
+[2021-09-29  17:29:31.852] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:30:14.477] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:31:58.086] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:32:04.027] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:32:10.485] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-09-29  17:33:47.847] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:33:53.655] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:34:00.127] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-09-29  17:34:06.400] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-09-29  17:34:12.761] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-09-29  17:34:19.100] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-09-29  17:34:26.171] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 7 times
+[2021-09-29  17:40:44.534] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:40:50.723] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:43:06.246] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:43:12.913] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:43:14.085] carousel_channel_list_page.py -> select_a_channel line:34 [INFO] : found the channel I want!
+[2021-09-29  17:43:14.709] carousel_channel_list_page.py -> select_a_channel line:36 [INFO] : playback NBA TV
+[2021-09-29  17:45:27.414] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:45:33.538] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:45:39.428] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-09-29  17:45:45.935] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-09-29  17:47:12.044] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:47:39.117] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:47:45.667] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:47:52.140] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-09-29  17:47:58.211] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-09-29  17:48:58.684] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-09-29  17:49:05.351] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-09-29  17:49:11.541] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-09-29  17:49:18.631] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-09-29  17:49:26.093] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-09-29  17:49:33.261] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-09-29  17:49:40.021] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 7 times
+[2021-09-29  17:49:45.866] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 8 times
+[2021-09-29  17:49:55.032] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 9 times
+[2021-09-29  17:50:02.856] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 10 times
+[2021-09-29  17:50:09.451] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 11 times
+[2021-09-29  17:50:16.024] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 12 times
+[2021-09-29  17:50:28.584] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 13 times
+[2021-09-29  17:50:35.929] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 14 times
+[2021-09-29  17:50:57.996] carousel_channel_list_page.py -> select_a_channel line:34 [INFO] : found the channel I want!
+[2021-09-29  17:51:01.209] carousel_channel_list_page.py -> select_a_channel line:36 [INFO] : playback NBA TV

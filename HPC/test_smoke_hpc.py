@@ -8,7 +8,9 @@
 import pytest
 import uiautomator2 as u2
 
+import status
 from HPC.BSP.bsp_steps import ethernet_connectivity
+from HPC.ui_pages.home_page import HomePage
 from HPC.ui_pages.youTube_sign_in_page import YouTubeSignInPage
 from devices_info import DevicesInfo
 
@@ -29,11 +31,16 @@ Testcases:
 
 class TestHPCSmoke:
 
-
     def setup_class(self):
         self.hpc = u2.connect(DevicesInfo.HPC_SERIALNO)
-        print(self.hpc)
+        print(self.hpc.info)
         self.hpc.implicitly_wait(5)
+        self.home_page = HomePage()
+        # TODO 感觉还是用fixtures好一些
+        # if DevicesInfo.TEST_ENVIRONMENT is "CH" and status.if_vpn_connected is False:
+        #     from HPC.ui_pages.ui_preconditions import UIPreconditions
+        #     setup = UIPreconditions()
+        #     setup.connect_vpn(self.hpc)
 
     @pytest.mark.parametrize('ip,result', [[DevicesInfo.MMU_IP, '64 bytes from 127.26.0.1'],
                                            [DevicesInfo.IAB_IP, '64 bytes from 127.26.0.4'],
@@ -43,13 +50,19 @@ class TestHPCSmoke:
         res = ethernet_connectivity(ip, self.hpc)
         assert result in res
 
-    def test_playBack_youTubeTV_on_home(self):
-        signin = YouTubeSignInPage()
-        if
-        pass
-
-    def test_playBack_youTubeTV_on_home_on_livetv(self):
-        pass
+    def test_playBack_youTubeTV_on_home(self, connect_vpn):
+        if DevicesInfo.TEST_ENVIRONMENT is 'CH' and status.if_vpn_connected is False:
+            connect_vpn()
+        if not status.if_youTube_sign_in:
+            YouTubeSignInPage() \
+                .sign_in_youTubeTV_account(self.hpc) \
+                .sliding_display_carousel_channel_list(self.hpc) \
+                .swipe_up_on_carousel_channel_list(self.hpc) \
+                .select_a_channel_to_play(self.hpc, 'ESPN', self.home_page)
+        else:
+            self.home_page.sliding_display_carousel_channel_list(self.hpc) \
+                .swipe_up_on_carousel_channel_list(self.hpc) \
+                .select_a_channel_to_play(self.hpc, 'ESPN', self.home_page)
 
     def test_playBack_amazon_video_on_foryou(self):
         pass

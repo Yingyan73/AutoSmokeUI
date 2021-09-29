@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @File  : UIPreconditions.py
+# @File  : ui_preconditions.py
 # @Author: Xuewen Lei
 # @Date  : 2021/9/18
-# @Desc  :
 
 import os
-
 import uiautomator2 as u2
-
 import status
 from HPC.BSP.bsp_steps import checking_internet_access
 from Logger.mylog import logger
@@ -16,7 +13,6 @@ from devices_info import DevicesInfo
 
 
 class UIPreconditions:
-    if_vpn_connected = False
     def connect_vpn(self, d: u2.Device):
         '''
         Precondition step on CHINA, If we want to test PAX on PID/RSD or Spotify,Alexa and other media apps on CID.
@@ -25,7 +21,6 @@ class UIPreconditions:
         '''
         # Step1: confirm mpc and hpc network connection is normal
         checking_internet_access(d, "baidu")
-        # TODO ping baidu，确认外网连接正常
         # Step2: install VPN APK
         logger.info("Step2: install VPN APK")
         f = os.popen("adb install " + DevicesInfo.VPN_APK_PATH)

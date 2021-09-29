@@ -3,7 +3,6 @@
 # @File  : bsp_steps.py
 # @Author: Xuewen Lei
 # @Date  : 2021/9/23
-# @Desc  :
 
 
 import uiautomator2 as u2

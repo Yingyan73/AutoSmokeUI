@@ -11,19 +11,35 @@ from devices_info import DevicesInfo
 
 
 class HomePage:
-    def playback_youTubeTV_by_swipe_up_and_down(self, d: u2.Device):
-        # swipe up
-        # d.swipe(1044, 847, 1044, 150)
-        # swipe carousel channel list
+    def sliding_display_carousel_channel_list(self, d: u2.Device):
+        d(resourceId="com.android.systemui:id/home").click_exists(5)
+        d(text="HOME").click_exists(5)
+        # Not every sliding is successful, add while loop to make sure slide successfully.
+        slide_times = 1
+        while not d(resourceId="com.ff.iai.paxlauncher:id/channel_logo").exists(5):
+            d.swipe(98, 518, 400, 518, 0.05)
+            logger.info(f"slide carousel channel list {slide_times} times")
+            slide_times += 1
+        from HPC.ui_pages.carousel_channel_list_page import CarouselChannelListPage
+        return CarouselChannelListPage()
 
-        # d.swipe(130, 518, 300, 518, 0.5)
-        # d.swipe_ext("right", box=(117, 509, 155, 509))
-        # d.drag(117, 509, 155, 509)
-        d.touch.move(117, 509).move(155, 509)
-        logger.info("wipe carousel channel list")
+    def swipe_up_on_main_screen(self, d: u2.Device):
+        # swipe up
+        d.swipe(1044, 847, 1044, 150)
+        logger.info("swipe up")
+
+    def swipe_down_on_main_screen(self, d: u2.Device):
+        # swipe down
+        d.swipe(1044, 150, 1044, 847)
+        logger.info("swipe down")
 
 
 if __name__ == '__main__':
     hp = HomePage()
     d = u2.connect(DevicesInfo.HPC_SERIALNO)
-    hp.playback_youTubeTV_by_swipe_up_and_down(d)
+    # hp.swipe_up_on_main_screen(d)
+    # d.sleep(5)
+    # hp.swipe_down_on_main_screen(d)
+    hp.sliding_display_carousel_channel_list(d)
+    # hp.swipe_down_on_carousel_channel_list(d)
+    # hp.swipe_up_on_carousel_channel_list(d)

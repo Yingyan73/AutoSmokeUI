@@ -3,7 +3,7 @@
 # @File  : mylog.py
 # @Author: Xuewen Lei
 # @Date  : 2021/9/23
-# @Desc  :
+
 import logging
 import colorlog
 
@@ -33,7 +33,8 @@ file_formatter = logging.Formatter(
     datefmt='%Y-%m-%d  %H:%M:%S'
 )
 console_formatter = colorlog.ColoredFormatter(
-    fmt='%(log_color)s[%(asctime)s.%(msecs)03d] %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
+    fmt='%(log_color)s[%(asctime)s.%(msecs)03d] %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %('
+        'message)s',
     datefmt='%Y-%m-%d  %H:%M:%S',
     log_colors=log_colors_config
 )
