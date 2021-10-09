@@ -77,7 +77,6 @@ class UIPreconditions:
             d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/cb_vpntoggle", text="Off").click(timeout=5)
             # pop-up notification and click "OK"
             d.sleep(2)
-            # TODO 不能老用sleep，看看有没有别的方法
             self.pop_up_confrim(d)
             # select group to login
             if not d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/tv_PromptEntry_Combo").exists(timeout=20):
@@ -89,6 +88,7 @@ class UIPreconditions:
                     d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/generic_list_item_value_text",
                       text="Connected").exists(timeout=10):
                 status.if_vpn_connected = True
+                logger.info("connected vpn!")
                 return True
         else:
             logger.info("already set vpn")
@@ -104,6 +104,7 @@ class UIPreconditions:
                     d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/generic_list_item_value_text",
                       text="Connected").exists(timeout=10):
                 status.if_vpn_connected = True
+                logger.info("connected vpn!")
                 return True
 
     def pop_up_confrim(self, d: u2.Device):
@@ -157,6 +158,8 @@ class UIPreconditions:
           text="Block Untrusted Servers").click()
         d(resourceId="com.android.systemui:id/back").click()
         return True
+
+    def double_uncheck_block_untrusted_servers_option(self,d: u2.Device):
 
 
 if __name__ == '__main__':

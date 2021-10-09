@@ -9,8 +9,9 @@ import pytest
 import uiautomator2 as u2
 
 import status
-from HPC.BSP.bsp_steps import ethernet_connectivity
+from HPC.BSP.bsp_steps import ethernet_connectivity, checking_internet_access
 from HPC.ui_pages.home_page import HomePage
+from HPC.ui_pages.ui_preconditions import UIPreconditions
 from HPC.ui_pages.youTube_sign_in_page import YouTubeSignInPage
 from devices_info import DevicesInfo
 
@@ -41,6 +42,9 @@ class TestHPCSmoke:
         #     from HPC.ui_pages.ui_preconditions import UIPreconditions
         #     setup = UIPreconditions()
         #     setup.connect_vpn(self.hpc)
+        if DevicesInfo.TEST_ENVIRONMENT is 'CH' and status.if_vpn_connected is False:
+            self.uip = UIPreconditions()
+            self.uip.connect_vpn(self.hpc)
 
     @pytest.mark.parametrize('ip,result', [[DevicesInfo.MMU_IP, '64 bytes from 127.26.0.1'],
                                            [DevicesInfo.IAB_IP, '64 bytes from 127.26.0.4'],
@@ -50,9 +54,12 @@ class TestHPCSmoke:
         res = ethernet_connectivity(ip, self.hpc)
         assert result in res
 
-    def test_playBack_youTubeTV_on_home(self, connect_vpn):
-        if DevicesInfo.TEST_ENVIRONMENT is 'CH' and status.if_vpn_connected is False:
-            connect_vpn()
+    def test_access_internet(self):
+        if status.if_vpn_connected is False:
+            self.uip.connect_vpn(self.hpc)
+        assert checking_internet_access(self.hpc, "google")
+
+    def test_playBack_youTubeTV_on_home(self):
         if not status.if_youTube_sign_in:
             YouTubeSignInPage() \
                 .sign_in_youTubeTV_account(self.hpc) \

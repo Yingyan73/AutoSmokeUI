@@ -8,10 +8,12 @@ import allure
 
 import uiautomator2 as u2
 
+from devices_info import DevicesInfo
+
 
 class TestDemo:
     def setup_class(self):
-        self.d = u2.connect("857353b4")
+        self.d = u2.connect(DevicesInfo.MPC_SERIALNO)
         self.d.implicitly_wait(5)
 
     def teardown_class(self):

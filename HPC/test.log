@@ -1,0 +1,11 @@
+[2021-10-08  13:45:21.648] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access baidu
+[2021-10-08  13:46:21.668] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-10-08  13:46:21.668] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-08  13:46:25.555] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-08  13:46:25.556] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-08  13:46:25.556] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-08  13:46:36.864] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-08  13:46:42.164] ui_preconditions.py -> connect_vpn line:94 [INFO] : already set vpn
+[2021-10-08  13:46:53.115] ui_preconditions.py -> connect_vpn line:100 [INFO] : select group to login

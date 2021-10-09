@@ -23,10 +23,14 @@ def checking_internet_access(d: u2.Device, domain_name: str):
         res = ethernet_connectivity(DevicesInfo.BAIDU_DOMAIN_NAME, d)
         if '64 bytes from' not in res:
             logger.error(f'hpc can not access {domain_name}')
+            return False
         logger.info("access network success")
     elif "google" in domain_name.lower():
         res = ethernet_connectivity(DevicesInfo.GOOGLE_DOMAIN_NAME, d)
         if '64 bytes from' not in res:
             logger.error(f'hpc can not access {domain_name}')
+            return False
         logger.info("access network success")
+        return True
+
 

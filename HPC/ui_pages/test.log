@@ -337,3 +337,149 @@
 [2021-09-29  17:50:35.929] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 14 times
 [2021-09-29  17:50:57.996] carousel_channel_list_page.py -> select_a_channel line:34 [INFO] : found the channel I want!
 [2021-09-29  17:51:01.209] carousel_channel_list_page.py -> select_a_channel line:36 [INFO] : playback NBA TV
+[2021-10-08  13:29:09.077] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access baidu
+[2021-10-08  13:30:09.197] bsp_steps.py -> checking_internet_access line:26 [INFO] : access network success
+[2021-10-08  13:30:09.198] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-08  13:30:12.053] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-08  13:30:12.053] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-08  13:30:12.053] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-08  13:30:27.306] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-08  13:30:28.497] ui_preconditions.py -> connect_vpn line:66 [INFO] : set vpn ip
+[2021-10-08  13:30:38.315] ui_preconditions.py -> connect_vpn line:76 [INFO] : turn on VPN
+[2021-10-08  13:30:48.166] ui_preconditions.py -> connect_vpn line:86 [INFO] : select group to login
+[2021-10-08  14:29:36.527] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  14:29:41.879] carousel_channel_list_page.py -> select_a_channel_to_play line:33 [INFO] : found the channel I want!
+[2021-10-08  14:29:42.678] carousel_channel_list_page.py -> select_a_channel_to_play line:35 [INFO] : playback NBA TV
+[2021-10-08  14:39:49.998] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  14:39:55.509] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  14:40:02.080] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  14:45:27.455] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  14:45:33.746] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  14:45:40.131] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  14:50:13.494] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  14:50:19.757] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  14:50:50.351] carousel_channel_list_page.py -> select_a_channel_to_play line:44 [INFO] : found the channel I want!
+[2021-10-08  14:50:51.118] carousel_channel_list_page.py -> select_a_channel_to_play line:46 [INFO] : playback NBA TV
+[2021-10-08  15:00:58.166] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:01:04.083] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:01:10.559] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  15:01:16.735] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-08  15:01:23.199] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-10-08  15:11:05.544] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:11:11.763] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:11:18.234] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  15:12:06.216] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:12:12.336] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:12:18.083] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  15:12:23.901] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-08  15:16:24.244] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:16:29.821] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:18:17.886] carousel_channel_list_page.py -> select_a_channel_to_play line:41 [INFO] : found the channel I want!
+[2021-10-08  15:18:18.660] carousel_channel_list_page.py -> select_a_channel_to_play line:43 [INFO] : playback NBA TV
+[2021-10-08  15:28:22.191] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:28:28.621] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:28:29.783] carousel_channel_list_page.py -> select_a_channel_to_play line:42 [INFO] : found the channel I want!
+[2021-10-08  15:28:30.353] carousel_channel_list_page.py -> select_a_channel_to_play line:44 [INFO] : playback NBA TV
+[2021-10-08  15:38:37.888] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:38:43.888] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:38:49.708] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  15:38:55.533] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-08  15:39:01.268] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-10-08  15:39:07.071] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-10-08  15:41:03.541] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:41:09.281] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:44:29.521] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:44:35.422] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:44:41.160] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  15:44:46.943] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-08  15:44:52.729] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-10-08  15:45:38.401] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:45:41.159] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  15:45:41.880] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback NBA TV
+[2021-10-08  15:55:49.201] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  15:55:55.129] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  15:56:30.329] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  15:56:30.773] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback MLB Network
+[2021-10-08  16:06:37.707] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  16:06:43.644] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  16:06:44.543] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback NBA TV
+[2021-10-08  16:16:52.528] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  16:16:58.755] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  16:17:05.027] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  16:17:56.203] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  16:17:56.759] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback MLB Network
+[2021-10-08  16:28:04.209] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  16:28:10.641] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  16:28:17.028] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  16:28:23.241] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-08  16:28:29.521] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-10-08  16:28:36.007] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-10-08  16:28:42.309] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 7 times
+[2021-10-08  16:28:48.561] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 8 times
+[2021-10-08  16:28:54.801] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 9 times
+[2021-10-08  16:29:01.251] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 10 times
+[2021-10-08  16:29:07.418] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 11 times
+[2021-10-08  16:29:11.611] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  16:29:12.583] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback NBA TV
+[2021-10-08  16:39:20.158] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  16:39:26.574] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  16:39:33.324] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  16:40:30.825] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  16:40:31.582] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback MLB Network
+[2021-10-08  16:50:39.404] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  16:50:45.824] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  16:50:49.437] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  16:50:50.165] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback NBA TV
+[2021-10-08  17:00:58.090] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  17:01:03.874] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  17:02:03.582] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  17:02:04.325] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback MLB Network
+[2021-10-08  17:12:11.880] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  17:12:17.769] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  17:12:21.090] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  17:12:22.050] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback NBA TV
+[2021-10-08  17:22:29.581] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  17:22:35.931] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  17:22:42.281] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  17:22:48.434] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-08  17:23:43.575] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  17:23:44.287] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback MLB Network
+[2021-10-08  17:33:51.513] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  17:33:54.057] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  17:33:54.627] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback NBA TV
+[2021-10-08  17:44:02.529] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  17:44:08.968] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  17:44:15.218] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-08  17:44:21.670] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-08  17:44:28.053] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-10-08  17:44:33.645] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-10-08  17:45:34.842] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  17:45:35.854] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback MLB Network
+[2021-10-08  17:55:43.089] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-08  17:55:48.739] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-08  17:55:53.032] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-08  17:55:53.749] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback NBA TV
+[2021-10-09  09:07:34.340] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-09  09:07:39.973] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-09  09:07:45.600] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-09  09:07:51.201] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-09  09:07:56.759] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-10-09  09:08:02.340] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-10-09  09:08:07.888] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 7 times
+[2021-10-09  09:08:13.462] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 8 times
+[2021-10-09  09:08:19.011] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 9 times
+[2021-10-09  09:08:47.021] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-09  09:08:47.401] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback MLB Network
+[2021-10-09  09:10:27.458] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access baidu
+[2021-10-09  09:11:27.498] bsp_steps.py -> checking_internet_access line:27 [INFO] : access network success
+[2021-10-09  09:11:27.498] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-09  09:11:30.781] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-09  09:11:30.781] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-09  09:11:30.781] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-09  09:11:47.063] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-09  09:11:52.380] ui_preconditions.py -> connect_vpn line:94 [INFO] : already set vpn
+[2021-10-09  09:12:03.364] ui_preconditions.py -> connect_vpn line:100 [INFO] : select group to login

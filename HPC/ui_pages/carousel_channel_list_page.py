@@ -23,13 +23,29 @@ class CarouselChannelListPage:
         logger.debug("swipe down on carousel channel list")
 
     def select_a_channel_to_play(self, d: u2.Device, channel_name, hp: HomePage):
-        swipe_times = 1
+        swipe_up_times = 1
+        swipe_down_times = 1
+        found_last_channel = False
+        found_first_channel = False
         if not d(resourceId="com.ff.iai.paxlauncher:id/channel_name").exists:
             hp.sliding_display_carousel_channel_list(d)
         while not d(resourceId="com.ff.iai.paxlauncher:id/channel_name", text=channel_name).exists:
-            self.swipe_up_on_carousel_channel_list(d)
-            logger.debug(f"swipe times :{swipe_times}")
-            swipe_times += 1
+            if found_last_channel is False and not d(resourceId="com.ff.iai.paxlauncher:id/channel_name",
+                                                     text="truTV").exists:
+                self.swipe_up_on_carousel_channel_list(d)
+                logger.debug(f"swipe up times :{swipe_up_times}")
+                swipe_up_times += 1
+                if d(resourceId="com.ff.iai.paxlauncher:id/channel_name", text="truTV").exists:
+                    found_last_channel = True
+            elif found_first_channel is False and not d(resourceId="com.ff.iai.paxlauncher:id/channel_name",
+                                                        text="ABC News Live").exists:
+                logger.debug("swipe to first page and can't find the channel I want, try to swipe down to find it.")
+                self.swipe_down_on_carousel_channel_list(d)
+                logger.debug(f"swipe down times :{swipe_down_times}")
+                swipe_down_times += 1
+                if d(resourceId="com.ff.iai.paxlauncher:id/channel_name",
+                     text="ABC News Live").exists:
+                    found_first_channel = True
         logger.info("found the channel I want!")
         d(resourceId="com.ff.iai.paxlauncher:id/channel_name", text=channel_name).click_exists(5)
         logger.info(f"playback {channel_name}")
@@ -38,4 +54,9 @@ class CarouselChannelListPage:
 if __name__ == '__main__':
     d = u2.connect(DevicesInfo.HPC_SERIALNO)
     cclp = CarouselChannelListPage()
-    cclp.select_a_channel_to_play(d, "NBA TV")
+    hp = HomePage()
+    while True:
+        cclp.select_a_channel_to_play(d, "NBA TV", hp)
+        d.sleep(600)
+        cclp.select_a_channel_to_play(d, "MLB Network", hp)
+        d.sleep(600)
