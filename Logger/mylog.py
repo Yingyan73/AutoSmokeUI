@@ -54,7 +54,7 @@ file_handler.close()
 
 if __name__ == '__main__':
     logger.debug('debug')
-    logger.info('info')
+    logger.info('info.json')
     logger.warning('warning')
     logger.error('error')
     logger.critical('critical')

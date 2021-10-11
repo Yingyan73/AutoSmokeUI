@@ -6,13 +6,13 @@
 
 import os
 import uiautomator2 as u2
-import status
 from HPC.BSP.bsp_steps import checking_internet_access
 from Logger.mylog import logger
 from devices_info import DevicesInfo
 
 
 class UIPreconditions:
+    if_vpn_connected = False
     def connect_vpn(self, d: u2.Device):
         '''
         Precondition step on CHINA, If we want to test PAX on PID/RSD or Spotify,Alexa and other media apps on CID.
@@ -20,7 +20,7 @@ class UIPreconditions:
         :return:
         '''
         # Step1: confirm mpc and hpc network connection is normal
-        checking_internet_access(d, "baidu")
+        # checking_internet_access(d, "baidu")
         # Step2: install VPN APK
         logger.info("Step2: install VPN APK")
         f = os.popen("adb install " + DevicesInfo.VPN_APK_PATH)
@@ -51,9 +51,9 @@ class UIPreconditions:
         # judge if disclaimer is pop-up
         if d(resourceId="android:id/alertTitle", text="AnyConnect").exists(timeout=3):
             d(resourceId="android:id/button1", text="OK").click_exists(5)
-        # Uncheck "Block Untrusted Servers" option
-        if not self.uncheck_block_untrusted_servers_option(d):
-            return False
+        # # Uncheck "Block Untrusted Servers" option
+        # if not self.uncheck_block_untrusted_servers_option(d):
+        #     return False
 
         # select a vpn to connect
         logger.info("select a vpn to connect")
@@ -74,7 +74,12 @@ class UIPreconditions:
             d.sleep(2)
             # turn on VPN
             logger.info("turn on VPN")
-            d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/cb_vpntoggle", text="Off").click(timeout=5)
+            d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/cb_vpntoggle", text="Off").click_exists(3)
+            # Uncheck "Block Untrusted Servers" option
+            if d(resourceId="android:id/action_bar_title", text="Untrusted VPN Server!").exists(3):
+                self.set_untrusted_vpn_server_option(d)
+                d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/cb_vpntoggle", text="Off").click_exists(3)
+
             # pop-up notification and click "OK"
             d.sleep(2)
             self.pop_up_confrim(d)
@@ -87,13 +92,18 @@ class UIPreconditions:
             if d(className="android.widget.Switch", text='On').exists(timeout=10) and \
                     d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/generic_list_item_value_text",
                       text="Connected").exists(timeout=10):
-                status.if_vpn_connected = True
+                self.if_vpn_connected = True
                 logger.info("connected vpn!")
                 return True
         else:
             logger.info("already set vpn")
             # turn on VPN
-            d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/cb_vpntoggle").click(timeout=5)
+            d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/cb_vpntoggle", text="Off").click_exists(3)
+            # Uncheck "Block Untrusted Servers" option
+            if d(resourceId="android:id/action_bar_title", text="Untrusted VPN Server!").exists(3):
+                self.set_untrusted_vpn_server_option(d)
+                d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/cb_vpntoggle", text="Off").click_exists(3)
+
             # pop-up notification and click "OK"
             self.pop_up_confrim(d)
             # select group to login
@@ -103,7 +113,7 @@ class UIPreconditions:
             if d(className="android.widget.Switch", text='On').exists(timeout=10) and \
                     d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/generic_list_item_value_text",
                       text="Connected").exists(timeout=10):
-                status.if_vpn_connected = True
+                self.if_vpn_connected = True
                 logger.info("connected vpn!")
                 return True
 
@@ -120,7 +130,7 @@ class UIPreconditions:
         # TODO 再优化一下，写得太啰嗦了
         self.hide_keyboard(d)
 
-        if d(resourceId="android:id/text1", text='Cert_Based').exists(timeout=5):
+        if d(resourceId="android:id/text1", text='Cert_Based').exists(3):
             d(className="android.widget.Spinner").click_exists(5)
             d.sleep(2)
             d.swipe(1044, 488, 1044, 359)
@@ -132,8 +142,10 @@ class UIPreconditions:
             if d(resourceId="android:id/alertTitle", text='Connection request').exists(timeout=5):
                 d(resourceId="android:id/button1", text='OK').click_exists(5)
         self.hide_keyboard(d)
-        if d(resourceId="android:id/text1", index=5, text="FF_Gardena_Remote_NS").exists(timeout=5):
+        if d(resourceId="android:id/text1", text="FF_Gardena_Remote_NS").exists(3):
+            d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/et_PromptEntry_Input").send_keys(DevicesInfo.ACCOUNT)
             d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/et_password").send_keys(DevicesInfo.PASSWD)
+            self.hide_keyboard(d)
             d(resourceId="android:id/button1", text='Connect').click_exists(5)
             if d(resourceId="android:id/alertTitle", text='Connection request').exists(timeout=5):
                 d(resourceId="android:id/button1", text='OK').click_exists(5)
@@ -143,23 +155,32 @@ class UIPreconditions:
             d(description="Unknown character").click_exists(5)
             logger.info("hide keyboard success!")
 
-    def uncheck_block_untrusted_servers_option(self, d: u2.Device):
-        # make sure current page is anyconnect home page
-        # TODO 是否需要改写为try except语法？
-        d.sleep(5)
-        if not d.xpath('//*[@resource-id="android:id/action_bar"]/android.widget.LinearLayout[2]').exists:
-            logger.error("current page is not anyconnect home page")
-            return False
-        d.xpath('//*[@resource-id="android:id/action_bar"]/android.widget.LinearLayout[2]').click()
-        d(resourceId="android:id/title", text="Settings").click()
-        # Uncheck "Block Untrusted Servers" option
-        # TODO 要判断当前勾选状态再操作, checkbox选中后，属性没变化，无法判断。。。
-        d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/preference_title",
-          text="Block Untrusted Servers").click()
-        d(resourceId="com.android.systemui:id/back").click()
-        return True
+    # def uncheck_block_untrusted_servers_option(self, d: u2.Device):
+    #     # make sure current page is anyconnect home page
+    #     # TODO 是否需要改写为try except语法？
+    #     d.sleep(5)
+    #     if not d.xpath('//*[@resource-id="android:id/action_bar"]/android.widget.LinearLayout[2]').exists:
+    #         logger.error("current page is not anyconnect home page")
+    #         return False
+    #     d.xpath('//*[@resource-id="android:id/action_bar"]/android.widget.LinearLayout[2]').click()
+    #     d(resourceId="android:id/title", text="Settings").click()
+    #     # Uncheck "Block Untrusted Servers" option
+    #     # TODO 要判断当前勾选状态再操作, checkbox选中后，属性没变化，无法判断。。。
+    #     d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/preference_title",
+    #       text="Block Untrusted Servers").click()
+    #     d(resourceId="com.android.systemui:id/back").click()
+    #     return True
 
-    def double_uncheck_block_untrusted_servers_option(self,d: u2.Device):
+    def set_untrusted_vpn_server_option(self, d: u2.Device):
+        if d(resourceId="android:id/action_bar_title", text="Untrusted VPN Server!").exists(3):
+            logger.info("open Untrusted VPN Server! page")
+            d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/cert_warning_btn_change_settings",
+              text="Change Settings").click_exists(3)
+            # Uncheck "Block Untrusted Servers" option
+            d(resourceId="com.cisco.anyconnect.vpn.android.avf:id/preference_title",
+              text="Block Untrusted Servers").click()
+            d(resourceId="com.android.systemui:id/back").click()
+            logger.info("Uncheck Block Untrusted Servers option")
 
 
 if __name__ == '__main__':

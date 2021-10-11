@@ -6,12 +6,12 @@
 # @Desc  :
 import uiautomator2 as u2
 
-import status
 from Logger.mylog import logger
 from devices_info import DevicesInfo
 
 
 class YouTubeSignInPage:
+    if_youTube_signin = False
     def sign_in_youTubeTV_account(self, d: u2.Device):
         d(resourceId="com.android.systemui:id/home").click_exists(5)
         if d(resourceId="identifierId", className="android.widget.EditText").exists(timeout=5):
@@ -24,7 +24,7 @@ class YouTubeSignInPage:
         d.click(1100, 549)
         if d(text="Navigate to homepage").exists(timeout=3) and d(text="settings").exists(timeout=3):
             logger.info("sign in successful!")
-        status.if_youTube_signin = True
+        self.if_youTube_signin = True
         from HPC.ui_pages.home_page import HomePage
         return HomePage()
 

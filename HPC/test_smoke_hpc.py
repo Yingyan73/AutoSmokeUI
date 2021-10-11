@@ -8,11 +8,11 @@
 import pytest
 import uiautomator2 as u2
 
-import status
 from HPC.BSP.bsp_steps import ethernet_connectivity, checking_internet_access
 from HPC.ui_pages.home_page import HomePage
 from HPC.ui_pages.ui_preconditions import UIPreconditions
 from HPC.ui_pages.youTube_sign_in_page import YouTubeSignInPage
+from Logger.mylog import logger
 from devices_info import DevicesInfo
 
 '''
@@ -37,14 +37,8 @@ class TestHPCSmoke:
         print(self.hpc.info)
         self.hpc.implicitly_wait(5)
         self.home_page = HomePage()
-        # TODO 感觉还是用fixtures好一些
-        # if DevicesInfo.TEST_ENVIRONMENT is "CH" and status.if_vpn_connected is False:
-        #     from HPC.ui_pages.ui_preconditions import UIPreconditions
-        #     setup = UIPreconditions()
-        #     setup.connect_vpn(self.hpc)
-        if DevicesInfo.TEST_ENVIRONMENT is 'CH' and status.if_vpn_connected is False:
-            self.uip = UIPreconditions()
-            self.uip.connect_vpn(self.hpc)
+        self.youTube_signin = YouTubeSignInPage()
+        self.uip = UIPreconditions()
 
     @pytest.mark.parametrize('ip,result', [[DevicesInfo.MMU_IP, '64 bytes from 127.26.0.1'],
                                            [DevicesInfo.IAB_IP, '64 bytes from 127.26.0.4'],
@@ -54,22 +48,31 @@ class TestHPCSmoke:
         res = ethernet_connectivity(ip, self.hpc)
         assert result in res
 
+    @pytest.mark.dependency()
     def test_access_internet(self):
-        if status.if_vpn_connected is False:
+        if DevicesInfo.TEST_ENVIRONMENT is 'CH' and self.uip.if_vpn_connected is False:
             self.uip.connect_vpn(self.hpc)
         assert checking_internet_access(self.hpc, "google")
 
-    def test_playBack_youTubeTV_on_home(self):
-        if not status.if_youTube_sign_in:
-            YouTubeSignInPage() \
-                .sign_in_youTubeTV_account(self.hpc) \
-                .sliding_display_carousel_channel_list(self.hpc) \
-                .swipe_up_on_carousel_channel_list(self.hpc) \
-                .select_a_channel_to_play(self.hpc, 'ESPN', self.home_page)
-        else:
-            self.home_page.sliding_display_carousel_channel_list(self.hpc) \
-                .swipe_up_on_carousel_channel_list(self.hpc) \
-                .select_a_channel_to_play(self.hpc, 'ESPN', self.home_page)
+    # @pytest.mark.dependency(depends=["test_access_internet"])
+    @pytest.mark.parametrize('channel_name', [["ESPN"]], ids=['ESPN'])
+    def test_playBack_youTubeTV_on_home(self,channel_name):
+        self.hpc(resourceId="com.android.systemui:id/home").click_exists(5)
+        self.hpc.xpath('//android.widget.FrameLayout[1]').click_exists(5)
+        if self.hpc(resourceId="headingText", text="Sign in").exists(10) and not self.youTube_signin.if_youTube_signin:
+            logger.info("sign in youTube account")
+            self.home_page = self.youTube_signin \
+                .sign_in_youTubeTV_account(self.hpc)
+
+        self.home_page.sliding_display_carousel_channel_list(self.hpc) \
+            .select_a_channel_to_play(self.hpc, channel_name, self.home_page) \
+            .confirm_selected_channel(self.hpc, channel_name, self.home_page)
+        self.hpc.sleep(5)
+        # TODO 断言需要再优化一下
+        self.hpc.click(977, 776)
+        if self.hpc(className="android.view.View", text=channel_name).exists(5):
+            pass
+
 
     def test_playBack_amazon_video_on_foryou(self):
         pass

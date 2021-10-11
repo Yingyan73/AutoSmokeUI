@@ -11,6 +11,7 @@ from devices_info import DevicesInfo
 
 
 class CarouselChannelListPage:
+
     def swipe_up_on_carousel_channel_list(self, d: u2.Device):
         # swipe up
         d.swipe(266, 929, 266, 251)
@@ -49,14 +50,33 @@ class CarouselChannelListPage:
         logger.info("found the channel I want!")
         d(resourceId="com.ff.iai.paxlauncher:id/channel_name", text=channel_name).click_exists(5)
         logger.info(f"playback {channel_name}")
+        return CarouselChannelListPage()
+
+    def confirm_selected_channel(self, d: u2.Device, channel_name, hp: HomePage):
+        if not d(resourceId="com.ff.iai.paxlauncher:id/channel_name").exists(5):
+            hp.sliding_display_carousel_channel_list(d)
+        if d(resourceId="com.ff.iai.paxlauncher:id/channel_name", text=channel_name).exists(5):
+            info = d(resourceId="com.ff.iai.paxlauncher:id/channel_name", text=channel_name).info
+            if info["selected"]:
+                d.click(977, 776)
+                if d(className="android.view.View", text=channel_name).exists(5):
+                    logger.info(f"playback and selected {channel_name}")
+                    return True
+            else:
+                logger.info(f"Didn't select {channel_name}")
+                return False
+            d(className="android.widget.Button", text='close').click_exists(3)
+        logger.error("playback channel didn't in the current list")
+        return False
 
 
 if __name__ == '__main__':
     d = u2.connect(DevicesInfo.HPC_SERIALNO)
     cclp = CarouselChannelListPage()
     hp = HomePage()
-    while True:
-        cclp.select_a_channel_to_play(d, "NBA TV", hp)
-        d.sleep(600)
-        cclp.select_a_channel_to_play(d, "MLB Network", hp)
-        d.sleep(600)
+    # while True:
+    #     cclp.select_a_channel_to_play(d, "NBA TV", hp)
+    #     d.sleep(600)
+    #     cclp.select_a_channel_to_play(d, "MLB Network", hp)
+    #     d.sleep(600)
+    cclp.confirm_selected_channel(d, "NBA TV", hp)
