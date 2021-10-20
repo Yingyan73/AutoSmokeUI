@@ -35,8 +35,8 @@ class UIPreconditions:
         # d(resourceId="com.android.systemui:id/home").click()
         # display APPS page
         if not d(resourceId="com.ff.iai.paxlauncher:id/appInfoTextView", text="AnyConnect").exists(timeout=3):
-            # d.press("home")
-            d(resourceId="com.android.systemui:id/home").click_exists(5)
+            d.press("home")
+            # d(resourceId="com.android.systemui:id/home").click_exists(5)
             if not d(text="APPS").click_exists(3):
                 # if can't get APPS element, try to use coordinates
                 d.click(1858, 117)
