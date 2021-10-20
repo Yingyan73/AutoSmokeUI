@@ -20,8 +20,8 @@ class BasePage:
         self.d = d
 
     # def find(self, by, value):
-    #     logging.info(by)
-    #     logging.info(value)
+    #     logging.info.json(by)
+    #     logging.info.json(value)
     #
     #     # 查找元素
     #     return self.driver.xpath()

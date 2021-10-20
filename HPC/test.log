@@ -9,3 +9,210 @@
 [2021-10-08  13:46:36.864] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
 [2021-10-08  13:46:42.164] ui_preconditions.py -> connect_vpn line:94 [INFO] : already set vpn
 [2021-10-08  13:46:53.115] ui_preconditions.py -> connect_vpn line:100 [INFO] : select group to login
+[2021-10-11  14:07:21.287] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  14:07:23.877] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  14:07:23.877] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  14:07:23.878] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  14:07:32.416] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-11  14:07:36.625] ui_preconditions.py -> connect_vpn line:66 [INFO] : set vpn ip
+[2021-10-11  14:07:46.608] ui_preconditions.py -> connect_vpn line:76 [INFO] : turn on VPN
+[2021-10-11  14:07:49.384] ui_preconditions.py -> set_untrusted_vpn_server_option line:176 [INFO] : open Untrusted VPN Server! page
+[2021-10-11  14:07:51.040] ui_preconditions.py -> set_untrusted_vpn_server_option line:183 [INFO] : Uncheck Block Untrusted Servers option
+[2021-10-11  14:08:00.627] ui_preconditions.py -> connect_vpn line:90 [INFO] : select group to login
+[2021-10-11  14:08:30.358] ui_preconditions.py -> connect_vpn line:96 [INFO] : connected vpn!
+[2021-10-11  14:08:30.370] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access google
+[2021-10-11  14:09:30.385] bsp_steps.py -> checking_internet_access line:33 [INFO] : access network success
+[2021-10-11  14:10:32.999] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  14:10:36.139] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  14:10:36.139] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  14:10:36.140] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  14:10:40.398] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-11  14:10:45.608] ui_preconditions.py -> connect_vpn line:99 [INFO] : already set vpn
+[2021-10-11  14:10:51.801] ui_preconditions.py -> connect_vpn line:110 [INFO] : select group to login
+[2021-10-11  14:11:21.730] ui_preconditions.py -> connect_vpn line:117 [INFO] : connected vpn!
+[2021-10-11  14:11:48.369] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  14:11:54.289] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-11  14:11:59.870] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-11  14:12:05.440] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 4 times
+[2021-10-11  14:12:11.009] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 5 times
+[2021-10-11  14:12:16.603] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 6 times
+[2021-10-11  14:12:22.171] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 7 times
+[2021-10-11  14:12:27.719] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 8 times
+[2021-10-11  14:12:33.290] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 9 times
+[2021-10-11  14:12:38.851] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 10 times
+[2021-10-11  14:12:44.400] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 11 times
+[2021-10-11  14:12:49.950] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 12 times
+[2021-10-11  14:12:55.499] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 13 times
+[2021-10-11  14:13:01.070] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 14 times
+[2021-10-11  14:13:06.640] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 15 times
+[2021-10-11  14:13:12.242] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 16 times
+[2021-10-11  14:13:17.841] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 17 times
+[2021-10-11  14:13:23.393] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 18 times
+[2021-10-11  14:13:28.932] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 19 times
+[2021-10-11  14:13:34.463] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 20 times
+[2021-10-11  14:13:40.012] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 21 times
+[2021-10-11  14:13:45.553] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 22 times
+[2021-10-11  14:26:18.314] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  14:26:51.840] carousel_channel_list_page.py -> select_a_channel_to_play line:49 [INFO] : found the channel I want!
+[2021-10-11  14:26:52.317] carousel_channel_list_page.py -> select_a_channel_to_play line:51 [INFO] : playback NBA TV
+[2021-10-11  15:16:43.382] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  15:16:45.933] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  15:16:45.933] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  15:16:45.934] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  15:16:50.682] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-11  15:16:55.123] ui_preconditions.py -> connect_vpn line:66 [INFO] : set vpn ip
+[2021-10-11  15:17:05.722] ui_preconditions.py -> connect_vpn line:76 [INFO] : turn on VPN
+[2021-10-11  15:17:07.812] ui_preconditions.py -> set_untrusted_vpn_server_option line:176 [INFO] : open Untrusted VPN Server! page
+[2021-10-11  15:17:09.761] ui_preconditions.py -> set_untrusted_vpn_server_option line:183 [INFO] : Uncheck Block Untrusted Servers option
+[2021-10-11  15:17:20.352] ui_preconditions.py -> connect_vpn line:90 [INFO] : select group to login
+[2021-10-11  15:17:49.063] ui_preconditions.py -> connect_vpn line:96 [INFO] : connected vpn!
+[2021-10-11  15:17:49.065] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access google
+[2021-10-11  15:18:49.087] bsp_steps.py -> checking_internet_access line:33 [INFO] : access network success
+[2021-10-11  15:21:16.435] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  15:21:37.665] carousel_channel_list_page.py -> select_a_channel_to_play line:50 [INFO] : found the channel I want!
+[2021-10-11  15:21:38.138] carousel_channel_list_page.py -> select_a_channel_to_play line:52 [INFO] : playback NBA TV
+[2021-10-11  15:21:39.305] carousel_channel_list_page.py -> confirm_selected_channel line:61 [INFO] : playback and selected NBA TV
+[2021-10-11  15:25:32.297] test_smoke_hpc.py -> test_playBack_youTubeTV_on_home line:60 [INFO] : sign in youTube account
+[2021-10-11  15:25:54.699] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  15:26:01.220] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-11  15:26:03.753] carousel_channel_list_page.py -> select_a_channel_to_play line:50 [INFO] : found the channel I want!
+[2021-10-11  15:26:04.748] carousel_channel_list_page.py -> select_a_channel_to_play line:52 [INFO] : playback NBA TV
+[2021-10-11  15:26:05.902] carousel_channel_list_page.py -> confirm_selected_channel line:61 [INFO] : playback and selected NBA TV
+[2021-10-11  15:33:38.934] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  15:33:41.416] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  15:33:41.416] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  15:33:41.417] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  15:33:49.621] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-11  15:33:52.651] ui_preconditions.py -> connect_vpn line:66 [INFO] : set vpn ip
+[2021-10-11  15:34:02.382] ui_preconditions.py -> connect_vpn line:76 [INFO] : turn on VPN
+[2021-10-11  15:34:04.081] ui_preconditions.py -> set_untrusted_vpn_server_option line:176 [INFO] : open Untrusted VPN Server! page
+[2021-10-11  15:34:05.573] ui_preconditions.py -> set_untrusted_vpn_server_option line:183 [INFO] : Uncheck Block Untrusted Servers option
+[2021-10-11  15:34:14.801] ui_preconditions.py -> connect_vpn line:90 [INFO] : select group to login
+[2021-10-11  15:34:41.992] ui_preconditions.py -> connect_vpn line:96 [INFO] : connected vpn!
+[2021-10-11  15:34:41.993] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access google
+[2021-10-11  15:35:42.015] bsp_steps.py -> checking_internet_access line:33 [INFO] : access network success
+[2021-10-11  15:35:42.038] test_smoke_hpc.py -> test_playBack_youTubeTV_on_home line:60 [INFO] : sign in youTube account
+[2021-10-11  15:36:08.854] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  15:36:14.442] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
+[2021-10-11  15:36:20.014] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 3 times
+[2021-10-11  15:55:01.537] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  15:55:04.493] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  15:55:04.494] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  15:55:04.494] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  15:55:13.810] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-11  15:55:19.775] ui_preconditions.py -> connect_vpn line:66 [INFO] : set vpn ip
+[2021-10-11  15:55:30.979] ui_preconditions.py -> connect_vpn line:76 [INFO] : turn on VPN
+[2021-10-11  15:55:34.314] ui_preconditions.py -> set_untrusted_vpn_server_option line:176 [INFO] : open Untrusted VPN Server! page
+[2021-10-11  15:55:37.264] ui_preconditions.py -> set_untrusted_vpn_server_option line:183 [INFO] : Uncheck Block Untrusted Servers option
+[2021-10-11  15:55:49.306] ui_preconditions.py -> connect_vpn line:90 [INFO] : select group to login
+[2021-10-11  15:56:20.354] ui_preconditions.py -> connect_vpn line:96 [INFO] : connected vpn!
+[2021-10-11  15:56:20.355] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access google
+[2021-10-11  15:56:58.866] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  15:57:20.373] bsp_steps.py -> checking_internet_access line:33 [INFO] : access network success
+[2021-10-11  16:43:25.118] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  16:43:27.646] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  16:43:27.646] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  16:43:27.647] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  16:43:35.325] ui_preconditions.py -> connect_vpn line:43 [INFO] : switch to APPS by coordinates
+[2021-10-11  16:44:05.202] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  16:44:07.812] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  16:44:07.813] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  16:44:07.813] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  16:44:14.975] ui_preconditions.py -> connect_vpn line:43 [INFO] : switch to APPS by coordinates
+[2021-10-11  16:46:50.278] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  16:46:52.699] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  16:46:52.700] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  16:46:52.700] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  16:47:18.361] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  16:47:20.955] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  16:47:20.956] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  16:47:20.958] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  16:47:28.311] ui_preconditions.py -> connect_vpn line:43 [INFO] : switch to APPS by coordinates
+[2021-10-11  16:59:30.320] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  16:59:34.449] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  16:59:34.450] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  16:59:34.450] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  16:59:47.300] ui_preconditions.py -> connect_vpn line:43 [INFO] : switch to APPS by coordinates
+[2021-10-11  17:06:24.229] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  17:06:26.801] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  17:06:26.802] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  17:06:26.803] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  17:06:35.140] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-11  17:06:40.342] ui_preconditions.py -> connect_vpn line:99 [INFO] : already set vpn
+[2021-10-11  17:06:48.744] ui_preconditions.py -> connect_vpn line:110 [INFO] : select group to login
+[2021-10-11  17:07:18.152] ui_preconditions.py -> connect_vpn line:117 [INFO] : connected vpn!
+[2021-10-11  17:07:18.154] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access google
+[2021-10-11  17:08:18.180] bsp_steps.py -> checking_internet_access line:33 [INFO] : access network success
+[2021-10-11  17:09:49.163] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  17:13:38.832] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-11  17:13:41.251] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-11  17:13:41.251] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-11  17:13:41.252] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-11  17:13:49.661] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-11  17:13:53.969] ui_preconditions.py -> connect_vpn line:66 [INFO] : set vpn ip
+[2021-10-11  17:14:03.944] ui_preconditions.py -> connect_vpn line:76 [INFO] : turn on VPN
+[2021-10-11  17:14:05.901] ui_preconditions.py -> set_untrusted_vpn_server_option line:176 [INFO] : open Untrusted VPN Server! page
+[2021-10-11  17:14:08.371] ui_preconditions.py -> set_untrusted_vpn_server_option line:183 [INFO] : Uncheck Block Untrusted Servers option
+[2021-10-11  17:14:20.749] ui_preconditions.py -> connect_vpn line:90 [INFO] : select group to login
+[2021-10-11  17:14:49.340] ui_preconditions.py -> connect_vpn line:96 [INFO] : connected vpn!
+[2021-10-11  17:14:49.341] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access google
+[2021-10-11  17:15:49.361] bsp_steps.py -> checking_internet_access line:33 [INFO] : access network success
+[2021-10-11  17:16:18.333] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  17:22:12.866] test_smoke_hpc.py -> test_playBack_youTubeTV_on_home line:62 [INFO] : sign in youTube account
+[2021-10-11  17:24:01.826] test_smoke_hpc.py -> test_playBack_youTubeTV_on_home line:62 [INFO] : sign in youTube account
+[2021-10-11  17:24:25.150] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-11  17:25:02.782] carousel_channel_list_page.py -> select_a_channel_to_play line:50 [INFO] : found the channel I want!
+[2021-10-11  17:25:03.409] carousel_channel_list_page.py -> select_a_channel_to_play line:52 [INFO] : playback NBA TV
+[2021-10-11  17:25:05.219] carousel_channel_list_page.py -> confirm_selected_channel line:61 [INFO] : playback and selected NBA TV
+[2021-10-15  14:33:13.761] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-15  14:33:16.503] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-15  14:33:16.504] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-15  14:33:16.504] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-15  14:33:28.538] ui_preconditions.py -> connect_vpn line:43 [INFO] : switch to APPS by coordinates
+[2021-10-15  14:34:10.725] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-15  14:34:13.304] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-15  14:34:13.305] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-15  14:34:13.307] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-15  14:34:17.446] ui_preconditions.py -> connect_vpn line:59 [INFO] : select a vpn to connect
+[2021-10-15  14:34:22.758] ui_preconditions.py -> connect_vpn line:99 [INFO] : already set vpn
+[2021-10-15  14:34:39.869] ui_preconditions.py -> connect_vpn line:110 [INFO] : select group to login
+[2021-10-15  14:35:09.240] bsp_steps.py -> checking_internet_access line:21 [INFO] : Step1: confirm hpc can access google
+[2021-10-15  14:36:09.262] bsp_steps.py -> checking_internet_access line:31 [ERROR] : hpc can not access google
+[2021-10-20  10:20:07.887] ui_preconditions.py -> connect_vpn line:25 [INFO] : Step2: install VPN APK
+[2021-10-20  10:20:12.284] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Performing Streamed Install
+
+[2021-10-20  10:20:12.285] ui_preconditions.py -> connect_vpn line:29 [INFO] : Console: Success
+
+[2021-10-20  10:20:12.285] ui_preconditions.py -> connect_vpn line:34 [INFO] : back to HOME page to launch AnyConnect app
+[2021-10-20  10:20:24.467] ui_preconditions.py -> connect_vpn line:43 [INFO] : switch to APPS by coordinates
+[2021-10-20  10:31:08.361] test_smoke_hpc.py -> test_playBack_youTubeTV_on_home line:63 [INFO] : sign in youTube account
+[2021-10-20  10:32:24.882] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 1 times
+[2021-10-20  10:32:30.980] home_page.py -> sliding_display_carousel_channel_list line:21 [INFO] : slide carousel channel list 2 times
